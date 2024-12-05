@@ -1,0 +1,21 @@
+.mat-mdc-row {
+    height: 90px;
+  }
+  .actions{
+    display: flex;
+    justify-content: end;
+    gap:14px;
+  }
+  .header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .search{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  table{
+    margin-bottom: 50px;
+  }
+  

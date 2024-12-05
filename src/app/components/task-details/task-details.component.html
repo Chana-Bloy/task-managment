@@ -1,0 +1,20 @@
+<div >
+    <div *ngIf="currentTask.id">
+      <h4>Task</h4>
+      <div>
+        <label><strong>Title:</strong></label> {{ currentTask.title }}
+      </div>
+      <div>
+        <label><strong>Description:</strong></label>
+        {{ currentTask.description }}
+      </div>
+      <div>
+        <label><strong>Status:</strong></label>
+        {{ currentTask.isCompleted ? "Complited" : "Not Complited" }}
+      </div>
+    </div>
+    
+  </div>
+  
+  
+  

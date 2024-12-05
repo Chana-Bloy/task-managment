@@ -1,0 +1,21 @@
+<div class="edit-form">
+  <h4>Create a new Task</h4>
+  
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Title</mat-label>
+      <input matInput id="title" [(ngModel)]="currentTask.title" name="title">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Description</mat-label>
+      <textarea matInput id="description" [(ngModel)]="currentTask.description" name="description"></textarea>
+    </mat-form-field>
+    <section class="example-section">
+      <mat-checkbox class="example-margin"  checked="currentTask.isCompleted" name="isCompleted"
+      [(ngModel)]="currentTask.isCompleted">Is Completed</mat-checkbox>
+    </section>
+  </form>
+  <button mat-raised-button color="accent" [disabled]="!currentTask.title||!currentTask.description" (click)="saveTask()">Save</button>
+  <p>{{ message }}</p>
+</div>
